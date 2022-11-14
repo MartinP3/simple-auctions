@@ -17,7 +17,7 @@
 - TBD
 
 ### Kanban board
-- Dragapp
+- Trello probably
 
 ### Repo
 - You're here!
