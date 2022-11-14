@@ -6,7 +6,7 @@
 ### Thingies (new title soon:tm:):
 - GitHub Projects | link-here
 - MUI | https://mui.com/material-ui/getting-started/overview/
-
+- Tailwind | https://tailwindcss.com/
 ### Gantt
 - link-here
 
