@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
     "prepare": "husky install"
   },
   "repository": {
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/MartinP3/simple-auctions#readme",
   "dependencies": {
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.3"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
