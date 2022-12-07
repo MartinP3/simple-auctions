@@ -9,6 +9,7 @@
       defer
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
+    <script defer type="module" src="/src/js/index.mjs"></script>
     <title>Simple Auctions</title>
   </head>
   <body class="min-vh-100 d-flex flex-column bg-dark text-white">
@@ -105,7 +106,7 @@
     </header>
     <main class="align-self-center mt-5">
       <div class="signInAndUpForm">
-        <form>
+        <form id="signUpForm">
           <h1>Sign Up</h1>
           <p class="small">* are required</p>
           <!-- Username input -->
@@ -152,7 +153,7 @@
           <button type="button" class="btn btn-primary btn-lg col-12 mb-3">
             Sign up
           </button>
-          <!-- Register buttons -->
+          <!-- Sign up buttons -->
           <div class="text-center">
             <p>Already a member? <a href="../sign-in/">Sign in</a></p>
           </div>
