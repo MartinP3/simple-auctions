@@ -10,6 +10,11 @@
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
     <script defer type="module" src="/src/js/index.mjs"></script>
+    <script
+      defer
+      type="module"
+      src="/src/js/handlers/changeAvatarBtn.mjs"
+    ></script>
     <title>Simple Auctions</title>
   </head>
   <body class="min-vh-100 d-flex flex-column bg-dark text-white">
@@ -58,14 +63,6 @@
                       >Create Listing</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/auction/my-listings/"
-                      >My Listings</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/auction/bids/">My Bids</a>
-                  </li>
                 </ul>
               </li>
             </ul>
@@ -85,18 +82,11 @@
                   class="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarNavDarkDropdown"
                 >
-                  <li><a class="dropdown-item" href="/profile/">Profile</a></li>
                   <li>
                     <a class="dropdown-item" href="/profile/sign-in/"
-                      >Sign In</a
+                      >Sign Out</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/profile/edit/"
-                      >Edit Profile</a
-                    >
-                  </li>
-                  <!-- <li><a class="dropdown-item" href="/profile/sign-in/">Sign Out</a></li> -->
                 </ul>
               </li>
             </ul>
@@ -106,7 +96,8 @@
     </header>
     <main class="align-self-center mt-5">
       <div class="col">
-        <h1>Your Profile</h1>
+        <h1 class="text-center">Your Profile</h1>
+        <div id="profile"></div>
       </div>
     </main>
     <footer></footer>
