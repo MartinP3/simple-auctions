@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/MartinP3/simple-auctions#readme",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.0"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
