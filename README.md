@@ -18,12 +18,12 @@ But if you wish to work in the same environment I did you must:
 
 ## Dependencies
 
-- bootstrap
-- sass
+- Bootstrap
+- Sass
 
 ## DevDependencies
 
 - Prettier
 - ESlint
 - Husky
-- lint-staged
+- Lint-staged
