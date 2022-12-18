@@ -5,12 +5,12 @@ export function postTemplateA(postData) {
     day: "numeric",
   });
   const formattedTime = new Date(postData.endsAt).toLocaleTimeString("en-GB");
-
+  // If no media inputted, use this media.
   if (postData.media.length < 1) {
     postData.media[0] =
       "https://images.unsplash.com/photo-1623018035782-b269248df916?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
   }
-
+  // If no title, call it untitled (although this is a required field)
   if (postData.title === "") {
     postData.title = "Untitled";
   }
@@ -47,7 +47,7 @@ export function postTemplateB(postData) {
   });
   const formattedTime = new Date(postData.endsAt).toLocaleTimeString("en-GB");
 
-  // Shows last bids, breaks if there is none, I can't figure out how to work around it, I'm dumb
+  // Sorts for the last bids
   const sortedBids = postData.bids.sort((a, b) => b.amount - a.amount);
 
   let bidsHTML = "";

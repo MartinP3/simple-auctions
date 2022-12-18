@@ -1,8 +1,10 @@
+// sign up function
 import { signUp } from "../api/auth/signUp.mjs";
 
 export function setSignUpFormListener() {
   const form = document.querySelector("#signUpForm");
 
+  // If correctly filled, will register a new account if not already one
   if (form) {
     localStorage.clear();
     form.addEventListener("submit", (event) => {
