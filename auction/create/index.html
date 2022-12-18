@@ -10,7 +10,7 @@
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
     <script defer type="module" src="/src/js/index.mjs"></script>
-    <title>Simple Auctions</title>
+    <title>Simple Auctions | Create Post</title>
   </head>
   <body class="min-vh-100 d-flex flex-column bg-dark text-white">
     <header>
@@ -96,11 +96,12 @@
           <div class="col-12 col-md-6">
             <h1 class="mb-3">Create a post</h1>
             <form id="createListing" class="formWidth">
+              <!-- Title for the listing -->
               <div class="form-group mb-3">
                 <label for="">Title*</label>
                 <input class="form-control" type="text" name="title" required />
               </div>
-
+              <!-- Description of the item -->
               <div class="form-group mb-3">
                 <label for="">Description</label>
                 <textarea
@@ -109,16 +110,17 @@
                   name="description"
                 ></textarea>
               </div>
-
+              <!-- Tags if needed -->
               <div class="form-group mb-3">
                 <label for="">Tags</label>
                 <input class="form-control" type="text" name="tags" />
               </div>
-
+              <!-- Media link for the listing -->
               <div class="form-group mb-3">
                 <label for="">Media (url)</label>
                 <input class="form-control" type="url" name="media" />
               </div>
+              <!-- Ending date and hour -->
               <div class="form-group mb-3">
                 <label for="">Ends At</label>
                 <input
