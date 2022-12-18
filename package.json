@@ -1,0 +1,42 @@
+{
+  "name": "simple-auctions",
+  "version": "1.0.0",
+  "description": "a simple auction site for a Noroff assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinP3/simple-auctions.git"
+  },
+  "author": "MartinP3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinP3/simple-auctions/issues"
+  },
+  "homepage": "https://github.com/MartinP3/simple-auctions#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "2.8.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
+  }
+}
