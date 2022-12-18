@@ -58,14 +58,6 @@
                       >Create Listing</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/auction/my-listings/"
-                      >My Listings</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/auction/bids/">My Bids</a>
-                  </li>
                 </ul>
               </li>
             </ul>
@@ -92,11 +84,10 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/profile/edit/"
-                      >Edit Profile</a
+                    <a class="dropdown-item" href="/profile/sign-in/"
+                      >Sign Out</a
                     >
                   </li>
-                  <!-- <li><a class="dropdown-item" href="/profile/sign-in/">Sign Out</a></li> -->
                 </ul>
               </li>
             </ul>
@@ -105,9 +96,29 @@
       </nav>
     </header>
     <main class="align-self-center mt-5">
-      <div class="col">
+      <div class="col text-center mb-5">
         <h1>Hello!</h1>
         <p>Welcome to Simple Auctions!</p>
+        <div class="d-flex">
+          <a
+            href="/profile/sign-in/"
+            class="btn btn-lg btn-primary mx-1"
+            type="button"
+            >Sign In</a
+          >
+          <a
+            href="/profile/sign-up/"
+            class="btn btn-lg btn-primary mx-1"
+            type="button"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <div class="text-center">
+        <h2>Active Listings</h2>
+        <a href="/auction/" class="btn btn-lg btn-primary" type="button"
+          >All auctions</a
+        >
       </div>
     </main>
     <footer></footer>

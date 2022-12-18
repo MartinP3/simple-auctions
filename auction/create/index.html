@@ -58,14 +58,6 @@
                       >Create Listing</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/auction/my-listings/"
-                      >My Listings</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/auction/bids/">My Bids</a>
-                  </li>
                 </ul>
               </li>
             </ul>
@@ -88,15 +80,9 @@
                   <li><a class="dropdown-item" href="/profile/">Profile</a></li>
                   <li>
                     <a class="dropdown-item" href="/profile/sign-in/"
-                      >Sign In</a
+                      >Sign Out</a
                     >
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="/profile/edit/"
-                      >Edit Profile</a
-                    >
-                  </li>
-                  <!-- <li><a class="dropdown-item" href="/profile/sign-in/">Sign Out</a></li> -->
                 </ul>
               </li>
             </ul>
@@ -105,8 +91,47 @@
       </nav>
     </header>
     <main class="align-self-center mt-5">
-      <div class="col">
-        <h1>Create listing</h1>
+      <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <h1 class="mb-3">Create a post</h1>
+            <form id="createListing" class="formWidth">
+              <div class="form-group mb-3">
+                <label for="">Title*</label>
+                <input class="form-control" type="text" name="title" required />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="">Description</label>
+                <textarea
+                  class="form-control"
+                  type="text"
+                  name="description"
+                ></textarea>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="">Tags</label>
+                <input class="form-control" type="text" name="tags" />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="">Media (url)</label>
+                <input class="form-control" type="url" name="media" />
+              </div>
+              <div class="form-group mb-3">
+                <label for="">Ends At</label>
+                <input
+                  class="form-control"
+                  type="date"
+                  name="endsAt"
+                  required
+                />
+              </div>
+              <button class="btn btn-success">Create Post</button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
