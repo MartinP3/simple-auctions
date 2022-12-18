@@ -49,7 +49,6 @@ export function postTemplateB(postData) {
 
   // Shows last bids, breaks if there is none, I can't figure out how to work around it, I'm dumb
   const sortedBids = postData.bids.sort((a, b) => b.amount - a.amount);
-  const placeholderNumber = sortedBids[0].amount + 1;
 
   let bidsHTML = "";
   if (sortedBids.length === 0) {
@@ -98,11 +97,9 @@ export function postTemplateB(postData) {
       <input
         type="number"
         class="form-control"
-        value="${placeholderNumber}"
-        placeholder="${placeholderNumber}"
+        placeholder="$1000000"
         aria-label="Bid input amount"
         aria-describedby="button"
-        min="${placeholderNumber}"
         required
       />
       <button class="btn btn-primary" type="button" id="button">

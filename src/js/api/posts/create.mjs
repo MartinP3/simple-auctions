@@ -20,6 +20,5 @@ export async function createListing(postData) {
     method,
     body: JSON.stringify(postData),
   });
-
   return await response.json();
 }
