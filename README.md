@@ -2,28 +2,42 @@
 
 ## Simple Auctions
 
-Not my proudest work whatsoever.
-Simple Auctions is a _drumroll_ auction site! you can list items you wish to sell and bid on things you want with 1000 free credits!
+![230530154631](https://github.com/MartinP3/simple-auctions/assets/70173574/91aeb11e-4989-4cdc-bb04-b9a15552c3c8)
 
-## Installation guide
+## Description
+Simple Auctions aims to give the user a simple and seamless auction experience, whether they wish to sell something or purchase something.
+The site is accessible for both keyboard users and mobile users alike and gives them a convenient experience on the site.
+- The user can find a wide range of items while perusing through the auction listings.
 
-You do not need anything to simply view the site locally, simply clone the repository and it'll work as intended.
-But if you wish to work in the same environment I did you must:
+## Built With
+- [Bootstrap](https://getbootstrap.com/)
+- [SASS](https://sass-lang.com/)
 
-- npm i
+## Getting Started
+### Installation guide
+#### Cloning the repo
+```
+git clone https://github.com/MartinP3/simple-auctions.git
+```
+or 
 
-- npm run build
+![230530165612](https://github.com/MartinP3/simple-auctions/assets/70173574/d974e56a-68a9-4d8a-b41c-31170722014c)
 
-# to install the dependencies.
+#### Installing dependencies
+```
+npm install
+```
 
-## Dependencies
+#### Running the app
+To build all the css from the scss folders.
+```
+npm run build
+```
 
-- Bootstrap
-- Sass
+Will launch live-server for updates to the page whenever you save in the code editor.
+```
+npm run dev
+```
 
-## DevDependencies
-
-- Prettier
-- ESlint
-- Husky
-- Lint-staged
+## Contact
+[Twitter](https://twitter.com/terriblecoding)
