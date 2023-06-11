@@ -1,5 +1,5 @@
 # Semester Project
-
+[Live site](https://iridescent-arithmetic-4b428a.netlify.app/auction/)
 ## Simple Auctions
 
 ![230530154631](https://github.com/MartinP3/simple-auctions/assets/70173574/91aeb11e-4989-4cdc-bb04-b9a15552c3c8)
